@@ -12,5 +12,11 @@ public class Main {
         WebElement firstName = driver.findElement(By.id("input0"));
         firstName.click();
         firstName.sendKeys("Elvira");
+        WebElement lastName = driver.findElement(By.id("input1"));
+        lastName.sendKeys("Nazir");
+        WebElement email = driver.findElement(By.id ("input2"));
+        email.sendKeys("elvira.nzr@gmail.com");
+        WebElement confirmemail = driver.findElement(By.id("input3"));
+        confirmemail.sendKeys("elvira.nzr@gmail.com");
     }
 }
