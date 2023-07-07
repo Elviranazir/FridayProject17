@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,6 +33,18 @@ public class Main {
         phoneNumber.sendKeys("4044679532");
         WebElement zipcode = driver.findElement(By.id("input6"));
         zipcode.sendKeys("30004");
+
+
+
+        //Tuna
+        WebElement state = driver.findElement(By.id("select0"));
+        state.click();
+        WebElement clickState = driver.findElement(By.id("select0"));
+        Select select = new Select(clickState);
+        select.selectByVisibleText("Georgia");
+        clickState.click();
+        WebElement element = driver.findElement(By.className("spinnie-container"));
+        element.click();
 
 
     }
