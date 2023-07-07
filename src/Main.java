@@ -1,6 +1,16 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://www.lidl.com/register");
+        WebElement firstName = driver.findElement(By.id("input0"));
+        firstName.click();
+        firstName.sendKeys("Elvira");
     }
 }
