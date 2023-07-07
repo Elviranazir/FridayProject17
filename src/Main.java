@@ -12,5 +12,15 @@ public class Main {
         WebElement firstName = driver.findElement(By.id("input0"));
         firstName.click();
         firstName.sendKeys("Elvira");
+
+        //Tuna
+        WebElement password = driver.findElement(By.id("input4"));
+        password.sendKeys("Techno-B-8");
+        WebElement phoneNumber =driver.findElement(By.id("input5"));
+        phoneNumber.sendKeys("4044679532");
+        WebElement zipcode = driver.findElement(By.id("input6"));
+        zipcode.sendKeys("30004");
+
+
     }
 }
