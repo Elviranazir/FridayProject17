@@ -32,7 +32,12 @@ public class Main {
         phoneNumber.sendKeys("4044679532");
         WebElement zipcode = driver.findElement(By.id("input6"));
         zipcode.sendKeys("30004");
-
+        WebElement birthday = driver.findElement(By.id("date-picker-dialog"));
+        birthday.sendKeys("04/01/1995");
+        WebElement adress = driver.findElement(By.id("input7"));
+        adress.sendKeys("404 meadow forest ct");
+        WebElement city = driver.findElement(By.id("input8"));
+        city.sendKeys("Atlanta");
 
     }
 }
