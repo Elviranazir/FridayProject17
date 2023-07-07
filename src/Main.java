@@ -13,8 +13,20 @@ public class Main {
         firstName.click();
         firstName.sendKeys("Elvira");
 
-        //Tuna
-        WebElement password = driver.findElement(By.id("input4"));
+
+  
+
+        WebElement lastName = driver.findElement(By.id("input1"));
+        lastName.sendKeys("Nazir");
+        WebElement email = driver.findElement(By.id ("input2"));
+        email.sendKeys("elvira.nzr@gmail.com");
+        WebElement confirmemail = driver.findElement(By.id("input3"));
+        confirmemail.sendKeys("elvira.nzr@gmail.com");
+      
+      
+     
+      
+         WebElement password = driver.findElement(By.id("input4"));
         password.sendKeys("Techno-B-8");
         WebElement phoneNumber =driver.findElement(By.id("input5"));
         phoneNumber.sendKeys("4044679532");
