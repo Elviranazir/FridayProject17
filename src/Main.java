@@ -14,6 +14,8 @@ public class Main {
         firstName.click();
         firstName.sendKeys("Elvira");
 
+        System.out.println("elvira");
+
 
 
         WebElement lastName = driver.findElement(By.id("input1"));
