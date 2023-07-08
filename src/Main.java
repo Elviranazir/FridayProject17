@@ -12,7 +12,7 @@ public class Main {
         driver.get("https://www.lidl.com/register");
         WebElement firstName = driver.findElement(By.id("input0"));
         firstName.click();
-        firstName.sendKeys("Elvira.");
+        firstName.sendKeys("Elviranazir");
 
         System.out.println("elvira");
 
