@@ -38,7 +38,7 @@ public class Main {
         WebElement city = driver.findElement(By.id("input8"));
         city.sendKeys("Atlanta");
 
-        System.out.println("deneme");
+
 
         //Tuna
         WebElement state = driver.findElement(By.id("select0"));
