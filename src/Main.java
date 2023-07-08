@@ -15,7 +15,6 @@ public class Main {
         firstName.sendKeys("Elvira");
 
 
-  
 
         WebElement lastName = driver.findElement(By.id("input1"));
         lastName.sendKeys("Nazir");
@@ -24,8 +23,7 @@ public class Main {
         WebElement confirmemail = driver.findElement(By.id("input3"));
         confirmemail.sendKeys("elvira.nzr@gmail.com");
       
-      
-     
+
       
          WebElement password = driver.findElement(By.id("input4"));
         password.sendKeys("Techno-B-8");
@@ -40,6 +38,7 @@ public class Main {
         WebElement city = driver.findElement(By.id("input8"));
         city.sendKeys("Atlanta");
 
+        System.out.println("deneme");
 
         //Tuna
         WebElement state = driver.findElement(By.id("select0"));
